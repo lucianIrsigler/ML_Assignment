@@ -7,7 +7,7 @@ finalFile = "predlabels.txt"
 testData = "testdata.txt"
 
 class Model(nn.Module):
-    def __init__(self,in_features=1041,h1=256,h2=128,out=21,embedding_dim=10):
+    def __init__(self,in_features=1041,h1=256,h2=64,out=21):
         super().__init__()
         self.fc1 = nn.Linear(in_features,h1)
         self.fc2 = nn.Linear(h1,h2)
